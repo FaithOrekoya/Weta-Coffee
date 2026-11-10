@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  
+  --color-espresso: #351D17;
+  --color-espresso-dark: #25130E;
+  --color-coffee: #4B2920;
+  --color-butter: #F7E5A9;
+  --color-butter-light: #FAF5E4;
+  --color-cream: #FAF5E4;
+  --color-cream-warm: #F6EDD3;
+  --color-beige: #EFE4CA;
+  --color-caramel: #F7E5A9;
+  --color-promo-yellow: #F7E5A9;
+  --color-forest: #40543A;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: #FAF5E4;
+  color: #351D17;
+  overflow-x: hidden;
+}
+
+.font-serif {
+  font-family: var(--font-serif);
+}
+
+.font-sans {
+  font-family: var(--font-sans);
+}
+
+::selection {
+  background-color: #F7E5A9;
+  color: #351D17;
+}
+
+/* Tabular numerals for prices and quantities */
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Framer-style infinite marquee ticker */
+@keyframes marquee {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 38s linear infinite;
+  will-change: transform;
+}
+
+.animate-marquee:hover,
+.group:hover .animate-marquee {
+  animation-play-state: paused;
+}
+

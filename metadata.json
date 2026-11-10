@@ -1,0 +1,8 @@
+{
+  "name": "Remix Wētā Coffee Auckland",
+  "description": "Premium Auckland specialty coffee roaster since 2014. Small-batch fresh roasted beans, One Tree Hill blend, Swiss Water decaf, and VBM espresso machines.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
